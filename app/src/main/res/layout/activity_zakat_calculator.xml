@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rose"
+    tools:context=".ZakatCalculator">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/source_sans_pro_black_italic"
+        android:text="@string/note"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="195dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textWeightGold"
+            android:layout_width="182dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|right"
+            android:text="Gold Weight (gram)"
+            android:textColor="#e2ccab"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textTypeGold"
+            android:layout_width="182dp"
+            android:layout_height="59dp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|right"
+            android:text="Type of Gold"
+            android:textColor="#e2ccab"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textCurrentGold"
+            android:layout_width="182dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|right"
+            android:text="Current Gold Value (RM)"
+            android:textColor="#e2ccab"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="189dp"
+        android:layout_height="194dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/inputWeight"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#DDB78C"
+            android:ems="10"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:hint="Enter your value"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8C6193"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/inputType"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#DDB78C"
+            android:ems="10"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:hint="Enter Keep / Wear"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8C6193"
+            android:textSize="20sp" />
+        />
+
+        <EditText
+            android:id="@+id/inputValue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#DDB78C"
+            android:ems="10"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:hint="Enter your value"
+            android:inputType="number"
+            android:paddingLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8C6193"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Calculate" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="450dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/labelTotalGold"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="26dp"
+            android:layout_toLeftOf="@+id/totalGold"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|right"
+            android:text="Total Value of Gold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />/>
+
+        <TextView
+            android:id="@id/totalGold"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:background="#856088"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelZakatPayable"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="26dp"
+            android:layout_toLeftOf="@+id/zakatPayable"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|right"
+            android:text="Zakat Payable"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />/>
+
+        <TextView
+            android:id="@id/zakatPayable"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="120dp"
+            android:background="#856088"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelGoldValue"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="26dp"
+            android:layout_toLeftOf="@+id/goldValue"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|right"
+            android:text="Uruf"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />/>
+
+        <TextView
+            android:id="@id/goldValue"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:background="#856088"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelTotalZakat"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="26dp"
+            android:layout_toLeftOf="@+id/totalZakat"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="Total Zakat"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />/>
+
+        <TextView
+            android:id="@id/totalZakat"
+            android:layout_width="187dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="180dp"
+            android:background="#856088"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/source_sans_pro_black"
+        android:text="@string/calculator_title"
+        android:textColor="#DAC09B"
+        android:textSize="24sp" />
+
+
+</FrameLayout>

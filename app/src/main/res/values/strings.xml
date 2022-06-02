@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Zakat Gold</string>
+
+    //Homepage
+    <string name="bigtitle">Welcome</string>
+    <string name="intro">Calculate your zakat gold now.</string>
+    <string name="calculate">Calculate</string>
+    <string name="ayat">“And establish prayer and give zakat, and whatever good you put forward for yourselves – you will find it with Allah.” (2:110, Quran)"</string>
+
+    //Menu
+    <string name="zakat_menu">Zakat Calculator</string>
+    <string name="aboutus_menu">About Us</string>
+    <string name="help_menu">Help</string>
+    <string name="information_menu">Information</string>
+
+    <string name="note">Note: 85 grams for gold keeping category and 200 grams for wearing category</string>
+
+    <string name="copyright"> Copyright &#169; 2022 Arif and Farid</string>
+
+    <string name="aboutus_page"> About Us</string>
+    <string name="calculator_page"> Zakat Calculator</string>
+    <string name="help_page"> Help</string>
+    <string name="information_page"> Information</string>
+
+    <string name="youtube"> <a href="https://www.youtube.com/channel/UCJTxjP5O4MQnSsleCchMQ5w/videos"> Youtube </a> </string>
+    <string name="github"> <a href="https://github.com/arifhmeli/ict602_zakatapplication"> Github </a> </string>
+
+    <string name="zakatgold_info"> Gold jewellery intended for usage is only obligated for Zakat if the weight of a piece of the gold jewellery has reached the haul and uruf. Zakat is then based on 2.5% of the total weight of gold from the piece of gold jewellery.</string>
+    <string name="zakat_info">Zakat is the third pillar of Islam and is wajib (compulsory) on Muslims who meet all the conditions. The word Zakat itself means to purify. Technically, Zakat means a fixed proportion collected from a specific type of mal (wealth) when they reach the haul (specific term) which must be distributed to specific categories of people.</string>
+    <string name="uruf">Uruf is the normative amount or the customary limit. When a person has gold amounting more than the uruf they are required to make Zakat contribution for it.</string>
+    <string name="calculator_title">Zakat Gold Estimation</string>
+
+</resources>

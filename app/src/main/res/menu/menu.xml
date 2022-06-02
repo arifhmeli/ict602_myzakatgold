@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu1"
+        android:title="@string/information_menu"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu2"
+        android:title="@string/zakat_menu"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu3"
+        android:title="@string/aboutus_menu"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/menu4"
+        android:title="@string/help_menu"
+        app:showAsAction="never"/>
+
+</menu>
